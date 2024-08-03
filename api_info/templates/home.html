@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+
+    <h1>BankInfo</h1>
+    <ul>
+        <li>
+            <a href="{% url 'bankdetail' %}">API - all banks list</a>
+        </li>
+        <li>
+            <a href="{% url 'branch-search' %}">API - bank details by Branch name</a>
+        </li>
+        <li>
+            <a href="{% url 'bank-search' %}">API - bank details by Bank name</a>
+        </li>
+    </ul>
+
+
+    <p>
+        <b>JSON format for API requests:</b>
+        <br>
+        <br>
+        <code>
+            { <br>
+                "bank_name" : "your_bank_name"
+                <br>
+            }
+        </code>
+        <br>
+        <br>
+        
+        <code>
+            { <br>
+                "branch_name" : "your_branch_name"
+                <br>
+            }
+        </code>
+    </p>
+
+    
+</body>
+</html>

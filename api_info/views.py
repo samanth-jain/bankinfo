@@ -1,10 +1,16 @@
 # banks/views.py
+from django.shortcuts import render
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.views import APIView
 from rest_framework.generics import ListAPIView
 from .serializers import BankSerializer
 from .models import Bank
+
+
+def HomeView(request):
+    return render(request, 'home.html')
+
 
 #API view to get all the Bank lists
 class BankListView(ListAPIView):
