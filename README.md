@@ -7,7 +7,8 @@
 ## To run project locally
 
 * Create virtual environment and activate
-* cd bankinfo
+* Clone the project
+* ```cd bankinfo```
 * Run ```pip install -r requirements.txt```
 * Change ```ALLOWED_HOSTS = ['bankinfo-production.up.railway.app']``` to ```ALLOWED_HOSTS = []``` in settings.py file
 * Finally run ```python manage.py runserver```
